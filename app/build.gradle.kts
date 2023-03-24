@@ -21,7 +21,7 @@ android {
     namespace = "eu.kanade.tachiyomi"
 
     defaultConfig {
-        applicationId = "eu.kanade.tachiyomi"
+        applicationId = "eu.kanade.rotachiyomi"
         versionCode = 99
         versionName = "0.14.5"
 
@@ -32,7 +32,7 @@ android {
         buildConfigField("boolean", "PREVIEW", "false")
 
         // Please disable ACRA or use your own instance in forked versions of the project
-        buildConfigField("String", "ACRA_URI", "\"https://tachiyomi.kanade.eu/crash_report\"")
+      //  buildConfigField("String", "ACRA_URI", "\"https://tachiyomi.kanade.eu/crash_report\"")
 
         ndk {
             abiFilters += SUPPORTED_ABIS

@@ -150,6 +150,8 @@ object SettingsReaderScreen : SearchableSettings {
         val navModePref = readerPreferences.navigationModePager()
         val imageScaleTypePref = readerPreferences.imageScaleType()
         val dualPageSplitPref = readerPreferences.dualPageSplitPaged()
+        val dualPageRotatePagedPref = readerPreferences.dualPageRotatePaged()
+        val dualPageRotateReversePagedPref = readerPreferences.dualPageRotateReversePaged()
 
         val navMode by navModePref.collectAsState()
         val imageScaleType by imageScaleTypePref.collectAsState()
@@ -222,6 +224,14 @@ object SettingsReaderScreen : SearchableSettings {
                     title = stringResource(R.string.pref_dual_page_invert),
                     subtitle = stringResource(R.string.pref_dual_page_invert_summary),
                     enabled = dualPageSplit,
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    pref = dualPageRotatePagedPref,
+                    title = stringResource(R.string.pref_dual_page_rotate),
+                ),
+                Preference.PreferenceItem.SwitchPreference(
+                    pref = dualPageRotateReversePagedPref,
+                    title = stringResource(R.string.pref_dual_page_rotate_reverse),
                 ),
             ),
         )

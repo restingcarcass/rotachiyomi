@@ -75,6 +75,10 @@ class ReaderPreferences(
 
     // endregion
 
+    fun dualPageRotatePaged() = preferenceStore.getBoolean("pref_dual_page_rotate", true)
+
+    fun dualPageRotateReversePaged() = preferenceStore.getBoolean("pref_dual_page_rotate_reverse", false)
+
     // region Color filter
 
     fun customBrightness() = preferenceStore.getBoolean("pref_custom_brightness_key", false)

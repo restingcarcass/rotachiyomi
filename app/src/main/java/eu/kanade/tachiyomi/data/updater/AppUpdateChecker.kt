@@ -1,4 +1,4 @@
-package eu.kanade.tachiyomi.data.updater
+/*package eu.kanade.tachiyomi.data.updater
 
 import android.content.Context
 import eu.kanade.tachiyomi.BuildConfig
@@ -106,4 +106,4 @@ val RELEASE_TAG: String by lazy {
     }
 }
 
-val RELEASE_URL = "https://github.com/$GITHUB_REPO/releases/tag/$RELEASE_TAG"
+val RELEASE_URL = "https://github.com/$GITHUB_REPO/releases/tag/$RELEASE_TAG"*/
